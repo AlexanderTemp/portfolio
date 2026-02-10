@@ -35,8 +35,8 @@ html {
 @theme inline {
   --color-primary: var(--primary);
   --color-primary-text: var(--primary-text);
-
   --color-secondary: var(--secondary);
+  --color-secondary-text: var(--secondary-text);
   --color-background: var(--background);
   --color-paper: var(--paper);
 }
@@ -45,6 +45,7 @@ html {
   --primary: #c9c9c9;
   --primary-text: #000;
   --secondary: #ff4e08;
+  --secondary-text: #fff;
   --background: #000;
   --paper: #242424;
 }
@@ -55,4 +56,14 @@ html {
   --secondary: #ff4e08;
   --background: #c9c9c9;
   --paper: #242424;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 12px var(--color-secondary);
+  }
+  50% {
+    box-shadow: 0 0 18px var(--color-secondary);
+  }
 }

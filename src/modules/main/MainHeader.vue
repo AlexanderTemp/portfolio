@@ -9,7 +9,12 @@
         <c-button variant="link" size="sm">Mis proyectos</c-button>
       </div>
       <div class="flex items-center gap-2">
-        <c-button variant="default" size="sm">
+        <c-button
+          variant="default"
+          color="secondary"
+          size="sm"
+          class="animate-[glow_3s_ease-in-out_infinite]"
+        >
           <PhPaperPlaneTilt weight="duotone" />
           Contáctame</c-button
         >
