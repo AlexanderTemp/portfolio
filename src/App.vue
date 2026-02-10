@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import { PhPaperPlaneTilt, PhScroll } from '@phosphor-icons/vue'
 import HeroImage from './modules/main/HeroImage.vue'
 import HeroPattern from './modules/main/HeroPattern.vue'
 import MainHeader from './modules/main/MainHeader.vue'
+import CButton from './shared/components/CButton.vue'
 </script>
 
 <template>
@@ -21,8 +23,14 @@ import MainHeader from './modules/main/MainHeader.vue'
         </h5>
 
         <div class="flex items-center gap-2">
-          <button>Contáctame</button>
-          <button>Experiencia laboral</button>
+          <c-button size="lg">
+            <ph-paper-plane-tilt weight="duotone" />
+            Contáctame</c-button
+          >
+          <c-button variant="outline" size="lg">
+            <ph-scroll weight="duotone" />
+            Hoja de vida</c-button
+          >
         </div>
       </div>
       <hero-image class="col-span-5 w-full h-full flex justify-center items-center" />
