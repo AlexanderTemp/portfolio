@@ -11,7 +11,9 @@ import CButton from './shared/components/CButton.vue'
     <hero-pattern class="text-primary -z-10" />
     <main-header />
     <div class="h-dvh grid grid-cols-12 gap-10">
-      <div class="w-[80%] flex flex-col justify-center xl:justify-start xl:mt-60 gap-4 col-span-7">
+      <div
+        class="w-[80%] flex flex-col justify-center lg:justify-start lg:mt-12 2xl:mt-60 gap-4 col-span-7"
+      >
         <h1 class="text-primary font-bold">
           <span class="text-secondary">Hola 👋</span>&nbsp;Soy Alexander
         </h1>
