@@ -4,6 +4,7 @@ import HeroImage from './modules/main/HeroImage.vue'
 import HeroPattern from './modules/main/HeroPattern.vue'
 import MainHeader from './modules/main/MainHeader.vue'
 import CButton from './shared/components/CButton.vue'
+import ResponsiveChip from './shared/components/ResponsiveChip.vue'
 </script>
 
 <template>
@@ -25,11 +26,11 @@ import CButton from './shared/components/CButton.vue'
         </h5>
 
         <div class="flex items-center gap-2">
-          <c-button size="lg">
+          <c-button>
             <ph-paper-plane-tilt weight="duotone" />
             Contáctame</c-button
           >
-          <c-button variant="outline" size="lg">
+          <c-button variant="outline">
             <ph-scroll weight="duotone" />
             Hoja de vida</c-button
           >
@@ -38,6 +39,7 @@ import CButton from './shared/components/CButton.vue'
       <hero-image class="col-span-5 w-full h-full flex justify-center items-center" />
     </div>
   </main>
+  <responsive-chip />
 </template>
 
 <style scoped></style>
